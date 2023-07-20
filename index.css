@@ -1,0 +1,551 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background: rgb(239,239,245);
+    background: linear-gradient(90deg, rgba(239,239,245,1) 0%, rgba(171,171,175,1) 50%, rgba(246,249,250,1) 100%);
+    height: 7rem;
+}
+
+.gamer-head-whole{
+    height: 6.96rem;
+    background-color: white;
+}
+
+.gamer-head-bc{
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.gamer-head-left{
+    display: flex;
+    align-items: center;  
+}
+
+.gamer-head-left img{
+
+    height: 40%;
+    object-fit: cover;
+    margin-right: 1.1rem;
+}
+
+.gamer-head-left h2{
+    font-size: 2.7rem;
+}
+
+.gamer-head-right{
+    display: flex;
+    align-items: center;  
+}
+
+.gamer-head-right li{
+    font-size: 1.25rem;
+    list-style: none;
+    margin-left: 2rem;
+}
+
+.header-follow-button{
+    
+    display: flex;
+    align-items: center;
+    width: 260px;
+    padding: 10px 0px;
+    background-color: rgb(230, 219, 219);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.header-follow-button .tiktok-icon{
+    font-size: 28px;
+}
+
+.header-follow-button .youtube-icon{
+    font-size: 28px;
+    margin: 0px 16px;
+    color: red;
+}
+/* first section start here */
+
+.Play-like-area{
+   
+   
+     background-image: url("images/images/Group-14.png");
+    background-repeat: no-repeat;
+    
+}
+
+.play-like-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.play-like-area-left{
+   
+    width: 50%;
+    height: 100%;
+}
+
+.play-like-area-left h3{
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.play-like-area-left h2{
+    font-size: 68px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 15px 0px;
+}
+.play-like-area-left p{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.play-like-area-left a{
+    text-decoration: none;
+    margin: 20px 10px;
+    margin-top: 100px;
+    padding: 10px 25px;
+    background-color: #fff;
+}
+
+.play-like-area-right{
+    width: 50%;
+}
+
+/* second section start here */
+
+.Cartoon-games-whole{
+    background-color: rgba(251, 167, 181, 0.104);
+}
+
+.cartoon-games{
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.cartoon-games-text-area h2{
+    font-size: 3rem;
+    padding-bottom: 3.5rem;
+    margin-left: 10rem;
+}
+
+.cartoon-games-text-area p{
+    font-size: 1.2rem;
+    text-align: end;
+    margin-bottom: 2rem;
+}
+
+.cartoon-games-text-area h4{
+    padding: 1.5rem 0rem;
+    width: 14rem;
+    text-align: center;
+    background-color: hotpink;
+    color: white;
+    border-radius: 42px;
+    margin-left: 15rem;
+}
+
+#purpose{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.cartoon-games-text-area h6{
+    text-align: end;
+    font-size: 1.9rem;
+}
+
+/* third section start here */
+
+.funny-videos-text{
+
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.funny-videos-text h2{
+    font-size: 3rem;
+}
+
+.funny-videos-text p{
+    color: gray;
+    font-size: 1.25rem;
+    margin: 1.8rem 0px;
+}
+
+.funny-videos-card{
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.4rem;
+    margin: 1rem auto;
+}
+
+.funny-image{
+    transition: all .2s ease-in-out;
+    position: relative;
+    z-index: 0;
+}
+.funny-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.watch-now{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.366);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    visibility: hidden;
+}
+.watch-now-icon i{
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 5px;
+    display: block;
+    text-align: center;
+}
+.watch-now-icon p{
+    color: white !important;
+}
+
+/* Hover */
+
+.funny-image:hover img{
+    border: 5px solid purple;
+}
+.funny-image:hover .watch-now{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.funny-videos-card p{
+    color: rgb(81, 78, 78);
+    font-size: 1.5rem;
+}
+
+/* fourth section start here */
+
+.anniversary-game-3rd{
+    display: flex;
+    max-width: 80%;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.anniversary-game-text-area h2{
+    font-size: 3rem;
+}
+
+.anniversery-text-1{
+    color: hotpink;
+}
+
+.anniversery-text-2{
+    margin-left: 4rem;
+}
+
+.anniversary-game-text-area p{
+    margin-top: 6rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    text-align: end;
+    color: gray;
+}
+
+.anniversery-img{
+    position: relative;
+}
+
+.anniversery-img-2{
+    position: absolute;
+    top: 350px;
+    right: 400px;
+}
+
+/* five section start here */
+
+.play-game{
+    display: flex;
+    max-width: 80%;
+    margin: 200px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.play-game-img{
+    position: relative;
+}
+
+
+.play-game-img-2{
+    position: absolute;
+    bottom: -120px;
+    left: 530px;
+}
+
+.play-game-description h2{
+    font-size: 3rem;
+    line-height: 1.rem;
+}
+
+.play-game-cc{
+    color: hotpink;
+}
+
+.play-game-description p{
+    color: gray;
+    font-size: 1.25rem;
+}
+
+/* six section start here */
+
+.careers-game-whole{
+    background-color: pink;
+   
+}
+
+.careers-game-bg-section{
+    /* background-image: url("images/images/Group-14.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    */
+}
+
+.careers-game-section{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.careers-games-left{
+    width: 50%;
+}
+
+.careers-games-right{
+    width: 50%;
+}
+.careers-games-left-inside{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* last section start here */
+
+.last-flex-game-whole{
+    padding: 100px 0px;
+}
+
+.last-flex-game{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.last-flex-game-cantainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.last-flex-game-cantainer li{
+    display: flex;
+    align-items: center;
+    padding: 6px 0px;
+    padding-right: 20px;
+    gap: 10px;
+    background-color: antiquewhite;
+    border-radius: 50px;
+}
+
+.last-flex-game-cantainer li span{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* footer section start here */
+
+.footer-section{
+    padding: 100px 0px;
+    background-color: black;
+}
+
+.footer-logo-text{
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    margin: 0 auto;
+}
+
+.footer-logo-text img{
+   
+}
+
+.footer-logo-text h2{
+    color: white;
+}
+
+.footer-textsection{
+    text-align: center;
+}
+.footer-textsection span{
+    margin: 0px 1.5rem ;
+    color: white;
+    font-size: 20px;
+}
+
+.footer-icon{
+    text-align: center;
+}
+
+.every-f-icon{
+    color: white;
+    font-size: 40px;
+    margin: 50px 10px;
+}
+
+.footer-policy{
+    color: gray;
+    text-align: center;
+}
+
+.footer-policy span{
+    margin: 0px 20px;
+    font-size: 20px;
+}
+
+.footer-policy p{
+    margin-top: 20px;
+}
+
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    nav {
+        height: 11rem;
+    }
+    .gamer-head-bc{
+        display: block;
+    }
+    .gamer-head-left {
+        justify-content: center;
+    }
+    .gamer-head-right{
+        display: block;
+    }
+    .gamer-head-right li{
+        text-align: center;
+        display: block;
+    }
+    .gamer-head-whole {
+        height: 11.96rem;
+    }
+    .header-follow-button {
+        margin: 10px auto;
+    }
+    /* first section */
+    .play-like-container{
+        display: block;
+        width: 100%;
+    }
+    .play-like-area-left{
+        display: none;
+    }
+    .play-like-area-mobile{
+        display: block;
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+    /* second section */
+    .cartoon-games{
+        display: block;
+        width: 100%;
+    }
+    .cartoon-gamesImg{
+        width: 100%;
+    }
+    .cartoon-games-text-area{
+        text-align: center;
+    }
+    .cartoon-games-text-area h2 {
+        margin-left: 0;
+    }
+    .cartoon-games-text-area p {
+        text-align: center;
+    }
+    .cartoon-games-text-area h4 {
+        margin: 0 auto;
+    }
+    .cartoon-games-text-area h6 {
+        text-align: center;
+    }
+    /* third section */
+    .funny-videos-card{
+        display: grid;
+        grid-template-columns: auto;
+    }
+.anniversary-game-3rd {
+    display: block;
+    max-width: 100%;
+    margin: 100px auto;
+}
+.anniversary-game-text-area h2 {
+    text-align: center;
+}
+.anniversary-game-text-area p {
+    text-align: center;
+}
+
+.play-game {
+    display: block;
+    max-width: 100%;
+    margin: 200px auto;
+}
+.play-game-description{
+    display: none;
+}
+.play-game-description-mobile{
+    display: block;
+}
+.play-game-img-1{
+    width: 60%;
+}
+.play-game-img-2 {
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+  }
+}
